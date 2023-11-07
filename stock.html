@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Stock Market</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .box {
+      width: 150px;
+      height: 150px;
+      background-color: #f5f5f5;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      border-radius: 5px;
+      margin: 10px;
+    }
+
+    .box:hover {
+      background-color: #007bff;
+      color: white;
+    }
+
+    .icon {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    #stock-price-container {
+      margin-top: 50px;
+      text-align: center;
+    }
+
+    #stock-price {
+      font-size: 28px;
+    }
+
+    #carousel-section {
+      margin-top: 50px;
+    }
+
+    .carousel-item {
+      font-size: 20px;
+      text-align: center;
+    }
+
+    .carousel-inner {
+      background-color: #f5f5f5;
+      border-radius: 5px;
+    }
+
+    .carousel-caption {
+      color: #333;
+    }
+
+    .carousel-control-prev, .carousel-control-next {
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-4">
+        <div class="box text-center">
+          <div class="icon">&#9733;</div>
+          Box 1
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="box text-center">
+          <div class="icon">&#9733;</div>
+          Box 2
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="box text-center">
+          <div class="icon">&#9733;</div>
+          Box 3
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="stock-price-container" class="mt-5">
+    <h2>Live Stock Price of Vedanta Limited</h2>
+    <p id="stock-price"></p>
+  </div>
+
+  <div id="carousel-section" class="container mt-5">
+    <div class="row">
+      <div class="col-6">
+        <img src="https://via.placeholder.com/300" alt="Placeholder Image" class="img-fluid">
+      </div>
+      <div class="col-6">
+        <div id="carouselExample" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <h3>Carousel Item 1</h3>
+            </div>
+            <div class="carousel-item">
+              <h3>Carousel Item 2</h3>
+            </div>
+            <div class="carousel-item">
+              <h3>Carousel Item 3</h3>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      const apiKey = 'TQZRMX1I8UP1LRMD';
+      const symbol = 'VEDL'; // Stock symbol for Vedanta Limited
+
+      const apiUrl = `https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=${symbol}&apikey=${apiKey}`;
+
+      function getStockPrice() {
+        $.get(apiUrl, function(data) {
+          const stockPrice = data['Global Quote']['05. price'];
+          $('#stock-price').text(`Price: $${stockPrice}`);
+        });
+      }
+
+      // Fetch stock price every 10 seconds (10000 milliseconds)
+      getStockPrice(); // Initial fetch
+      setInterval(getStockPrice, 10000); // Fetch every 10 seconds
+    });
+  </script>
+</body>
+</html>
