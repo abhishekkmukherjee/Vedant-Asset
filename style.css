@@ -1,0 +1,96 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+.body{
+    font-family: 'Eczar', serif;
+  font-family: 'Poppins', sans-serif;
+  }
+
+  .topbar{
+    background-color: #21314b;
+    color: white;
+    
+}
+.topbar p {
+        font-size: 85%;
+        padding-top: 1em;
+        padding-right: 21em;
+}
+
+/* this below media query is to remove the topbar in small screen*/
+@media only screen and (max-width: 800px) {
+    .topbar {
+      display: none;
+    }
+    
+  }
+
+  @media only screen and (max-width: 800px) {
+    .card-body iframe {
+    width: 320px !important;
+    }
+    .footer p{
+      margin-left: 8px;
+      margin-right: 8px;
+    }
+    .footer h3{
+      margin-left: 8px;
+    }
+  }
+
+  .homeicons{
+    width: 5em;
+    height: 5em;
+    text-align: center;
+    justify-content: center;
+    margin-left: 6em;
+  }
+
+  .navbar 
+{    font-family: 'Roboto Condensed', sans-serif !important;
+  color: rgb(0, 0, 0) !important;
+  font-weight:bold !important;
+font-size: medium;
+
+
+ }
+
+ .navbar ul {
+  margin-left: 15em;
+ font-family: 'Poppins', sans-serif;;
+}
+
+/* this below media query is to remove the margin left of navbar  in small screen and I've also made the display block and given margin bottom of 10px
+between the buttons*/
+@media only screen and (max-width: 1088px) {
+  .navbar ul {
+    margin-left: 0em;
+  }
+
+  .btn{
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+
+ 
+
+
+ .btn{
+    background-color: #21314b !important;
+    color: white !important;
+    margin-right: 13px !important;
+    padding: 10px 13px 10px 13px !important;
+  
+  }
+  .btn:hover{
+    background-color: orange !important;
+    color: black !important;
+  }
