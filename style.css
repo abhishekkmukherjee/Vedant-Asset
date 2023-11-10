@@ -94,3 +94,444 @@ between the buttons*/
     background-color: orange !important;
     color: black !important;
   }
+  .footer{
+    background-color: #f4f4f4 !important;
+    color: black !important;
+  }
+  
+  .footerLogo{
+    height: 6em !important;
+    width: 17em !important;
+    margin-right: 13em !important;
+  }
+  
+  .footer a{
+    text-decoration: none;
+    color: black;
+  }
+  .googlePlay{
+    width: 8em;
+    height: 3em;
+    margin-right: 13em;
+  
+  }
+  
+  .footer1 p{
+    color: rgb(86, 78, 78) !important;
+    text-align: left !important;
+    margin-left: 1em !important;
+  }
+  .footer1 a{
+    color: rgb(86, 78, 78) !important;
+    margin-left: 1em !important;
+  }
+  
+  .servicesFooter p{
+   margin-bottom: 4px !important;
+   justify-content: left !important;
+   align-items:flex-start !important;
+   color: rgb(136, 113, 113);
+   text-align: left;
+  
+    
+   
+  }
+  
+  .servicesFooter  a{
+    
+    color: rgb(86, 78, 78) !important;
+  }
+  
+  .text-uppercase {
+    text-transform: uppercase!important;
+    text-align: left;
+  }
+  
+  .useful p{
+    margin-bottom: 4px !important;
+    justify-content: left !important;
+    align-items:flex-start !important;
+    color: rgb(36, 32, 32);
+    text-align: left;
+  }
+  
+  .useful a{
+    color: rgb(86, 78, 78); 
+  }
+  
+  .aboutUs{
+    color: rgb(86, 78, 78);
+    text-align: left;
+  }
+  
+  
+  
+  /* services css starts from here*/
+  
+  #services {
+    background-color: white !important;
+    color:#20247b !important;
+font-size:large ;
+font-weight: bold;
+
+
+  }
+
+ 
+  #services .services-top {
+      padding: 70px 0 50px;
+  }
+  #services .services-list {
+      padding-top: 50px;
+  }
+  .services-list .service-block {
+      margin-bottom: 25px;
+  }
+  .services-list .service-block .ico {
+      font-size: 38px;
+      float: left;
+  }
+  .services-list .service-block .text-block {
+      margin-left: 58px;
+  }
+  .services-list .service-block .text-block .name {
+      font-size: 20px;
+      font-weight: 900;
+      margin-bottom: 5px;
+  }
+  .services-list .service-block .text-block .info {
+      font-size: 16px;
+      font-weight: 300;
+      margin-bottom: 10px;
+  }
+  .services-list .service-block .text-block .text {
+    font-size: 13px;
+    line-height: normal;
+    font-weight: 400;
+  }
+  .highlight {
+      color:#2ac5ed;;
+      font-weight:bold;
+  } 
+  
+  /* join now banner css */
+  
+  .joinBanner{
+    border: 2px solid rgb(253, 238, 238);
+    border-radius: 2px;
+  
+  }
+  
+  .joinText{
+    color: white;
+    background-color: #21314b;
+    padding: 2em;
+  }
+  .joinButton{
+    display: flex;
+    float: right;
+    margin-top: -4em;
+   margin-right: 3em;
+  color: #000000;
+  background-color: orange;
+    
+  }
+  
+  .joinButton:hover{
+    background-color: #21314b;
+    color: white;
+  }
+  
+  @media only screen and (max-width: 930px) {
+   .joinText h4{
+    font-size: smaller !important;
+    font-weight: 700 !important;
+  
+   }
+   
+    .joinButton {
+      height: 3em !important;
+      width: 8em !important;
+     display: flex;
+    margin-top: -35px;
+    font-size: xx-small;
+   margin-right: 15em;
+   padding-bottom: 20px !important;
+    }
+  
+  }
+  
+  
+  /* about us home page css*/
+  
+  .aboutHead {
+   border-bottom: 3px solid black;
+    width: 17em;
+    padding-left: 4em;
+    padding-top: 1em;
+    margin-left: 53em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  
+    color: black;
+    border-radius: 3px;
+  
+  }
+  
+  .aboutVideo{
+    width: 25em !important;
+    margin-left: 2em;
+    margin-top: 1em;
+  }
+  
+  .aboutTextHome {
+    display: flex;
+  width: 55em;
+  height: 35em;
+    text-align: justify;
+    color: #000000;
+    font-size:medium;
+  margin-left: 40em;
+  text-justify:newspaper;
+  padding: 0 4em 4em 4em ;
+  margin-top: -24em;
+  
+  
+  }
+  
+  @media only screen and (max-width: 1400px) {
+    .aboutHead {
+     display: none;
+    }
+  
+    .aboutVideo iframe{
+     display: none;
+    }
+    .aboutTextHome{
+     display: none;
+    }
+  }
+  
+  
+  
+  /* about us home page css ends here*/
+  
+  
+  /* why us css starts from here*/
+  
+  .feature-box-1 {
+    padding: 32px;
+    box-shadow: 0 0 30px rgba(31, 45, 61, 0.125);
+    margin: 15px 0;
+    position: relative;
+    z-index: 1;
+    border-radius: 10px;
+    overflow: hidden;
+    -moz-transition: ease all 0.35s;
+    -o-transition: ease all 0.35s;
+    -webkit-transition: ease all 0.35s;
+    transition: ease all 0.35s;
+    top: 0;
+  }
+  .feature-box-1 * {
+    -moz-transition: ease all 0.35s;
+    -o-transition: ease all 0.35s;
+    -webkit-transition: ease all 0.35s;
+    transition: ease all 0.35s;
+  }
+  .feature-box-1 .icon {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    background: #fc5356;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 50%;
+    margin-bottom: 22px;
+    font-size: 27px;
+  }
+  .feature-box-1 .icon i {
+    line-height: 70px;
+  }
+  .feature-box-1 h5 {
+    color: #20247b;
+    font-weight: 600;
+  }
+  .feature-box-1 p {
+    margin: 0;
+  }
+  .feature-box-1:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: auto;
+    right: 0;
+    border-radius: 10px;
+    width: 0;
+    background: #20247b;
+    z-index: -1;
+    -moz-transition: ease all 0.35s;
+    -o-transition: ease all 0.35s;
+    -webkit-transition: ease all 0.35s;
+    transition: ease all 0.35s;
+  }
+  .feature-box-1:hover {
+    top: -5px;
+  }
+  .feature-box-1:hover h5 {
+    color: #ffffff;
+  }
+  .feature-box-1:hover p {
+    color: rgba(255, 255, 255, 0.8);
+  }
+  .feature-box-1:hover:after {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    left: 0;
+    right: auto;
+  }
+  .section {
+      padding: 100px 0;
+      position: relative;
+  }
+  .section-title {
+      padding-bottom: 45px;
+  }
+  .section-title h2 {
+      font-weight: 700;
+      color: #20247b;
+      font-size: 45px;
+      margin: 0 0 15px;
+      border-left: 5px solid #fc5356;
+      padding-left: 15px;
+  }
+  
+  
+  
+  
+  /* why us css ends here */
+
+  /* ceo section css starts from here */
+
+  .container {
+    margin-top: 50px;
+}
+
+.image-container img {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text-section {
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.text-subsection {
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.read-more-btn {
+    background-color: #6f42c1;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.heading {
+    color: #2c3790;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #20247b;
+    font-size: 35px;
+}
+
+
+/* top services starts from here*/
+
+.random-body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  margin: 2px 0 0 0;
+  background-color: #f8f9fa;
+  flex-wrap: wrap;
+}
+
+.random-container {
+  width: 150px;
+  height: 200px;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.random-container img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.random-container h4 {
+  color: #2c3790;
+  margin: 0;
+}
+
+.random-container:hover {
+  background-color: #2c3790;
+  color: white;
+}
+/* iamge and text carousel*/
+.custom-carousel-container,
+.custom-description-container {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.custom-carousel-item img {
+    width: 100%; /* Make images responsive */
+    height: auto;
+    object-fit: cover;
+}
+
+.custom-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.custom-sub-header {
+    text-align: center;
+    color: #2C3790;
+}
+.custom-header h2{
+  font-weight: 700;
+  color: #20247b;
+  font-size: 35px;
+}
+
+.servicep{
+  justify-content: center;
+  display: flex;
+}
